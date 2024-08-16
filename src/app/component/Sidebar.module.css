@@ -1,0 +1,13 @@
+/* components/Sidebar.module.css */
+.sidebar {
+    transition: width 0.5s;
+  }
+  
+  .heading {
+    transition: display 0.5s;
+  }
+  
+  .linkText {
+    transition: display 0.5s;
+  }
+  

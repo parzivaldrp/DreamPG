@@ -1,0 +1,175 @@
+.mainSkeleton {
+  margin-top: -7vh;
+}
+
+.SelHd {
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.klgd {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hryuj {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.imgDivg {
+  margin-bottom: 20px;
+  display: block;
+  height: auto;
+}
+
+.imgskel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Photo {
+  width: 40%;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.parantdev {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: auto;
+}
+
+.desSkel {
+  width: 80%;
+  display: flex;
+  gap: 40px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.LeftlesSkel {
+  width: 70%;
+}
+
+.Leftlocation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.Leftlocation img {
+  width: 24px;
+  height: 24px;
+}
+
+.Leftlocation p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.listInfo {
+  display: flex;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+.listInfo ul li {
+  list-style: none;
+  margin-top: 30px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+.listInfoAmenities {
+  display: flex;
+  gap: 10em;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.listInfoAmenities .AmenTick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5vh;
+}
+
+.AmenTick img {
+  width: 24px;
+  height: 24px;
+}
+
+.AmenTick p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hrLeftInfo {
+  display: flex;
+  gap: 25px;
+}
+
+.leftAditionalInfo {
+  margin-top: 2vh;
+}
+
+@media only screen and (max-width: 1100px) {
+  .LeftlesSkel {
+    width: 100%;
+  }
+
+  .leftAditionalInfo {
+    text-align: center;
+  }
+
+  .desSkel {
+    display: block;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .RightlesSkel {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .listInfo {
+    text-align: left;
+  }
+
+  .listInfo ul li {
+    font-size: 1rem;
+  }
+
+  .listInfoAmenities {
+    display: block;
+    margin-top: 2vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .AmenTick {
+    margin-top: 5vh;
+    background-color: aqua;
+  }
+}

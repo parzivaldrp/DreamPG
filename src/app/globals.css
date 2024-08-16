@@ -1,0 +1,32 @@
+.man{
+    background-color: #ffffff;
+}
+.lan{
+    background-color: #007bff;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin: 0px -10px;
+  }
+  
+  .item {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+  }
+  
+  .content {
+    color: #242424;
+    background-color: #1bbefe;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+  }
