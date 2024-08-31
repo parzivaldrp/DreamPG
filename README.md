@@ -90,6 +90,11 @@ The admin panel allows administrators to manage PGs and user accounts. To access
 * Delete PGs
 * Manage user accounts
 
+**Accessing the Admin Panel**
+---------------------
+
+To access the admin panel, visitors can navigate to http://localhost:3000/pages/admin in their web browser. This will display the admin login page, where administrators can enter their credentials to access the admin panel.
+
 **Multi-Form Submission**
 ---------------------
 
