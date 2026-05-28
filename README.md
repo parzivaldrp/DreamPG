@@ -1,116 +1,230 @@
 
 
-🏠 A Next.js-based online accommodation booking system designed to streamline the room booking process for customers and administrators.
+# DreamPG — Accommodation Booking System
 
-**Overview**
------------
+DreamPG is a full-stack accommodation booking web application built with **Next.js** and **MongoDB**.
 
-Dream PG is a comprehensive online booking system that aims to revolutionize the way accommodation facilities are managed and booked. The system provides a user-friendly interface for customers to search and book rooms, while empowering administrators with powerful management tools and insights.
+It is designed for PG / rental-style accommodation listings, where users can browse available properties and admins can manage listings through a dedicated admin panel.
 
-**Key Features**
----------------
+This project helped me practice building a real-world CRUD-based application with separate user and admin flows, database-backed content, form handling, and structured project architecture.
 
-* **Streamlined booking process** with real-time availability updates
-* **Personalized recommendations** based on user preferences and browsing history
-* **Secure payment processing** with integration with popular payment gateways
-* **Comprehensive admin dashboard** for managing rooms, bookings, and users
-* **Advanced search and filtering options** for customers
-* **Group bookings and event planning features**
-* **Integration with external calendars and loyalty programs**
+---
 
-**Technical Details**
--------------------
+## 🚀 Live Demo
 
-* **Front-end:** Next.js
-* **Back-end:** MongoDB
-* **Operating System:** Windows
-* **Programming Languages:** JavaScript, HTML, CSS
+Coming soon
 
-**Getting Started**
------------------
+---
 
-### 1. Clone the repository:
+## 📌 Overview
+
+DreamPG focuses on the core structure of an accommodation booking platform.
+
+Users can browse PG / rental listings, view details, and submit booking-related information.
+
+Admins can manage accommodation data by adding, editing, and deleting PG listings from the system.
+
+The goal of this project was to understand how a real booking platform is structured from both sides:
+
+- **User side:** browsing and booking
+- **Admin side:** managing listings and data
+- **Database side:** storing and retrieving accommodation information
+
+---
+
+## ✨ Key Features
+
+### User Side
+
+- View available PG / accommodation listings
+- Browse property options
+- View details about individual PG listings
+- Submit booking-related information
+- User-friendly layout for exploring accommodation options
+
+### Admin Side
+
+- Add new PG listings
+- Edit existing listing details
+- Delete PG listings
+- Manage accommodation data through an admin panel
+- Store listing information in MongoDB
+
+---
+
+## 🛠 Tech Stack
+
+| Area | Technology |
+|---|---|
+| Framework | Next.js |
+| Language | JavaScript |
+| Styling | CSS |
+| Database | MongoDB |
+| Backend | Next.js server-side / API logic |
+| Version Control | Git & GitHub |
+
+---
+
+## 🧱 Project Structure
+
+```txt
+src/
+├── app/
+│   └── pages/
+│       ├── user/          # User-facing pages
+│       └── admin/         # Admin panel pages
+│
+├── components/            # Reusable UI components
+├── public/                # Static assets
+└── ...
+```
+
+---
+
+## ⚙️ How It Works
+
+DreamPG follows a simple full-stack flow:
+
+1. Admin adds PG / accommodation details through the admin panel
+2. The data is stored in MongoDB
+3. Users can browse the available PG listings
+4. Users can view details of each listing
+5. Booking-related information can be submitted through the user side
+6. Admin can update or remove listings when needed
+
+This structure helped me understand how frontend pages, backend logic, and a database work together in a full-stack application.
+
+---
+
+## 🧑‍💼 Admin Functionality
+
+The admin panel is used to manage accommodation listings.
+
+Admins can:
+
+- Create new PG listings
+- Update existing listings
+- Delete listings
+- Manage listing details such as name, location, facilities, and other property information
+
+This helped me practice CRUD operations and admin-side application flow.
+
+---
+
+## 👤 User Functionality
+
+The user side is focused on browsing and booking.
+
+Users can:
+
+- Explore available PG listings
+- View details about a selected PG
+- Submit booking-related details
+- Navigate through a simple accommodation discovery flow
+
+---
+
+## 🧠 What I Learned
+
+While building DreamPG, I practiced:
+
+- Structuring a full-stack Next.js project
+- Building separate user and admin flows
+- Creating reusable UI components
+- Performing CRUD operations with MongoDB
+- Handling form submissions
+- Managing database-backed content
+- Thinking through real-world booking platform logic
+- Organizing project folders and routes
+- Improving UI layout and user experience
+
+---
+
+## 📦 Getting Started
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/parzivaldrp/Dream-PG.git
+git clone https://github.com/parzivaldrp/DreamPG.git
+cd DreamPG
+```
 
-### 2. Install dependencies:
+Install dependencies:
 
 ```bash
 npm install
+```
 
-### 3. Start the development server:
+Run the development server:
 
 ```bash
 npm run dev
-Open your browser and navigate to http://localhost:3000 to see the project in action.
+```
 
-**Project Structure**
----------------------
+Open the app in your browser:
 
-The project follows a modular architecture, with separate folders for components, pages, public assets, and tests. Here's a brief overview of the project structure:
+```txt
+http://localhost:3000
+```
 
-### Folders
+---
 
-* **components**: 📦 Contains reusable UI components used throughout the project.
-* **pages**: 📄 Contains the Next.js pages that make up the application.
-* **public**: 📂 Contains static assets that are served directly by the web server.
-* **test**: 🧪 Contains unit tests for the project.
+## 🔐 Environment Variables
 
-**User and Admin Panels**
--------------------------
+Create a `.env.local` file in the root of the project.
 
-The project includes separate user and admin panels, each with its own set of pages and functionality.
+```bash
+MONGO_URI=your_mongodb_connection_string
+```
 
-### Location of User and Admin Folders
+Do not commit real database credentials to GitHub.
 
-To find the user and admin folders, navigate to `src/app/pages`. Inside this folder, you'll find two subfolders:
+---
 
-* **user**: 👥 Contains the pages and components that make up the user panel.
-* **admin**: 👮 Contains the pages and components that make up the admin panel.
+## 📸 Screenshots
 
-**User Panel**
--------------
+Screenshots will be added after the next UI polish pass.
 
-The user panel allows users to view and manage PGs. To access the user panel, users can log in with their credentials. Once logged in, users can:
+---
 
-* View a list of PGs
-* Search for PGs
-* View details about each PG
-* Book a PG
+## 🔮 Future Improvements
 
+Planned improvements for DreamPG:
 
-**Admin Panel**
--------------
+- Add user authentication
+- Add admin authentication
+- Add booking status tracking
+- Add image upload for PG listings
+- Add better search and filtering
+- Add form validation
+- Improve error handling
+- Improve responsive UI
+- Add deployment link
+- Add screenshots
+- Add payment integration in the future
+- Add booking confirmation emails
 
-The admin panel allows administrators to manage PGs and user accounts. To access the admin panel, administrators can log in with their credentials. Once logged in, administrators can:
+---
 
-* Add new PGs
-* Edit existing PGs
-* Delete PGs
-* Manage user accounts
+## 💡 Why This Project Matters
 
-**Accessing the Admin Panel**
----------------------
+DreamPG shows how a basic accommodation booking platform can be structured using a modern full-stack JavaScript stack.
 
-To access the admin panel, visitors can navigate to http://localhost:3000/pages/admin in their web browser. This will display the admin login page, where administrators can enter their credentials to access the admin panel.
+The project demonstrates important junior developer skills such as:
 
-**Multi-Form Submission**
----------------------
+- Building pages and components
+- Connecting an app to a database
+- Creating admin-side CRUD functionality
+- Handling user-facing flows
+- Organizing a full-stack project
+- Thinking beyond UI and considering real application behavior
 
-The project includes a multi-form submission feature that allows administrators to enter detailed information about each PG. The form includes fields for:
+---
 
-* PG name
-* Location
-* Facilities
-* And more!
+## 👨‍💻 About Me
 
-Once the form is submitted, the information is stored in a database and displayed on the PG details page.
+Built by [Darshan Panchal](https://github.com/parzivaldrp).
 
-**Contributing**
---------------
+I’m a junior full-stack developer based in Melbourne, Australia, currently building practical projects with **Next.js**, **MongoDB**, **Supabase**, and **AWS**.
 
-We welcome contributions to the project! To get started, take a look at our [contributing guidelines](CONTRIBUTING.md).
-
-  
-
+I’m looking for junior / entry-level frontend or full-stack developer roles where I can learn from experienced developers and contribute to real products.
